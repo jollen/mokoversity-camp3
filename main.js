@@ -3,6 +3,9 @@ var gameModule = (function() {
 	var timeoutVar,
 		counter = 0;
 
+	var colors = ['#ff0000', '#0000ff', 'yellow'];
+	var length = colors.length;
+
 	function start() {
         var canvas = document.getElementById('game');
         var ctx = canvas.getContext('2d');
@@ -13,7 +16,7 @@ var gameModule = (function() {
         canvas.width = 640;
         canvas.height = 480;
 
-        ctx.fillStyle = '#ff0000';
+        ctx.fillStyle = colors[counter % length];
         ctx.beginPath();
         ctx.arc(ballX, ballY, ballR, 0, Math.PI * 2 , true);
         ctx.fill();
