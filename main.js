@@ -23,9 +23,11 @@ var gameModule = (function() {
         } else {
 	        timeoutVar = setTimeout(start, 1000);
 	        counter = counter + 1;
-	        
-	        console.log("Counter: " + counter);
 	    } 
+	}
+
+	function gameOver() {
+        console.log("Counter: " + counter);
 	}
 
 	return {
