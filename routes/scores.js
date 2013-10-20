@@ -4,5 +4,5 @@
  */
 
 exports.index = function(req, res){
-  console.log("Query: " + req.url);
+  console.log("Query: " + scores);
 };
