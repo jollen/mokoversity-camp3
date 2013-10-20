@@ -22,7 +22,7 @@ var gameModule = (function() {
         ctx.fill();
 
         if (counter >= 10) {
-
+        	gameOver();
         } else {
 	        timeoutVar = setTimeout(start, 1000);
 	        counter = counter + 1;
